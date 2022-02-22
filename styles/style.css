@@ -237,7 +237,11 @@ header img {
     float: right;
 }
 .facebook {
-    background-image: url("../images/icon-facebook.svg");
+    /* 
+     fixed border-box no-repeat center/50% url(
+          */
+    background: border-box no-repeat center/100% url("../images/icon-facebook.svg");
+    /* display: block; */
 }
 .twitter {
     background-image: url("../images/icon-twitter.svg");
@@ -248,7 +252,7 @@ header img {
 
 /* footer */
 .attribution {
-    margin-top: 2rem;
+    margin: 2rem auto;
     font-size: 1rem;
     text-align: center;
 }
