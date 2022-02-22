@@ -17,8 +17,52 @@ body {
     font-size: 2rem;
     background-image: url("../images/bg-header-desktop.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 /* end generics */
 
+/* media queries */
+@media and (max-width: 375px) {
+    .downloads {
+        flex-wrap: wrap;
+    }
+}
 
+.large-logo {
+    margin: 10rem auto;
+}
+.large-logo img {
+    display: block;
+    margin: auto;
+}
+.top {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.top h1 {
+    color: hsl(210, 10%, 33%);
+}
+.top p {
+    margin: 4rem auto;
+    width: 50%;
+}
+.downloads {
+    margin: 6rem auto;
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+}
+.button {
+    padding: 1.6rem 8rem;
+    color: #fff;
+    border-radius: 8rem;
+}
+.ios {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 2px 2px 10px  hsla(171, 66%, 44%, 0.5);
+}
+.mac {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 2px 2px 10px  hsla(233, 100%, 69%, 0.5);
+}
