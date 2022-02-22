@@ -217,6 +217,34 @@ header img {
 .privacy { grid-area: privacy; }
 .press { grid-area: press; }
 .install { grid-area: install; }
+/* .social {
+    display: grid;
+    grid-template-areas: 
+        "facebook twitter instagram";
+    grid-auto-rows: min-content;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.facebook {grid-area: facebook;}
+.twitter {grid-area: twitter;}
+.instagram {grid-area: instagram;} */
+.social {
+    width: 300px;
+    padding: 30px;
+    position: relative;
+    float: right;
+}
+.facebook {
+    background-image: url("../images/icon-facebook.svg");
+}
+.twitter {
+    background-image: url("../images/icon-twitter.svg");
+}
+.instagram {
+    background-image: url("../images/icon-instagram.svg");
+}
 
 /* footer */
 .attribution {
