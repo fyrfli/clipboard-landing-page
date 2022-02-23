@@ -26,16 +26,10 @@ body {
     margin: 2rem auto;
     background: url("../images/bg-header-desktop.png") repeat-x;
 }
-@media screen and (max-width: 375px) {
-    .downloads {
-        width: 95%;
-    }
-}
 /* end generics */
 
 p {
     color: var(--greyish-blue);
-
 }
 .container {
     margin: 12rem 1rem;
@@ -274,4 +268,11 @@ footer hr {
     border-top: 1px dotted var(--dark-grey-blue);
     display: block;
     margin: 2rem auto;
+}
+
+/* for desktop version */
+@media screen and (max-width: 375px) {
+    .downloads {
+        width: 95%;
+    }
 }
