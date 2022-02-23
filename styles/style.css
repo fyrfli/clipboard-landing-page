@@ -101,11 +101,26 @@ p {
     gap: 2rem;
     justify-content: center;
 }
+@media screen and (min-width: 40rem) {
+    .desktop-features {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .desktop-features .item {
+        flex: 0 1 45%;
+    }
+}
 .desktop-pic {
     display: block;
     margin: 5rem auto;
     width: 95%;
     height: auto;
+}
+@media screen and (min-width: 40rem) {
+    .desktop-pic {
+        position: relative;
+        float: left;
+    }
 }
 .item {
     flex-basis: 95%;
@@ -137,6 +152,7 @@ p {
     display: flex;
     flex-flow: row wrap;
     margin: 6rem auto;
+    justify-content: center;
 }
 .mobile-pic {
     display: block;
