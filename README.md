@@ -29,6 +29,7 @@ Users should be able to:
 ### Screenshot
 
 ![](images/solution-screenshot.png)
+![Mobile screenshot](images/mobile-screenshot.png)
 
 ### Links
 
