@@ -16,6 +16,7 @@
     list-style: none;
     text-decoration: none;
     border: none;
+    height: auto;
 }
 html {
     font-size: 62.5%;
@@ -56,9 +57,10 @@ p {
     display: flex;
     flex-flow: row wrap;
     margin: 4rem auto;
-    gap: 2rem;
+    gap: 1.6rem;
     width: 95%;
     justify-content: center;
+    height: auto;
 }
 .button {
     padding: 2rem 8rem;
@@ -75,7 +77,7 @@ p {
     box-shadow: 2px 2px 12px var(--pale-blue);
 }
 .middle {
-    margin: 10rem 0;
+    margin: 8rem 0;
 }
 .feature-1 h2 {
     text-align: center;
@@ -92,7 +94,7 @@ p {
 .desktop-features {
     display: flex;
     flex-flow: row wrap;
-    gap: 2rem;
+    gap: 1.6rem;
     justify-content: center;
 }
 .desktop-pic {
@@ -103,6 +105,7 @@ p {
 }
 .item {
     flex-basis: 95%;
+    height: auto;
 }
 .item h2 {
     text-align: center;
@@ -123,9 +126,8 @@ p {
 }
 .text-icon {
     display: block;
-    margin: 5rem auto;
-    width: 20%;
-    height: auto;
+    margin: 1rem auto;
+    height: 30%
 }
 .mobile-features {
     display: flex;
@@ -139,12 +141,16 @@ p {
     width: 95%;
     height: auto;
 }
+.selling-points {
+    display: flex;
+    flex-flow: column nowrap;
+}
 .sponsors {
     margin: 8rem auto;
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    /* flex-flow: row wrap; */
+    height: auto;
 }
 .sponsors img {
     display: block;
@@ -203,27 +209,30 @@ footer hr {
 }
 
 /* for desktop version */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 430px) {
     .downloads {
         width: 95%;
     }
     .desktop-features {
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: row;
+        gap: 1rem;
+        padding-top: 4rem;
     }
     .desktop-features .item {
-        flex: 0 1 45%;
+        flex: 0 0 35%;
+        margin: 0;
     }
     .desktop-pic {
         position: relative;
         float: left;
     }
     .desktop-items {
-        margin-top: 5rem;
+        width: auto;
+        height: auto;
     }
     .desktop-items p, .desktop-items h3 {
         text-align: left;
-        padding: 0;
     }
     .mobile-features {
         display: flex;
@@ -241,12 +250,13 @@ footer hr {
     }
     .mobile-pic {
         display: block;
-        width: 65%;
+        width: 45%;
     }
     .sponsors {
         display: flex;
         flex-direction: row;
-        width: 85%;
+        width: 90%;
+        gap: 1rem;
     }
     .sponsors img {
         display: block;
@@ -254,22 +264,29 @@ footer hr {
         width: 2rem;
         height: auto;
     }
+    .bottom-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        /* width: 90%; */
+    }
     .small-logo {
-        width: 8rem;
+        width: 25%;
+        height: auto;
     }
     .links {
         display: flex;
-        flex-direction: row wrap;
-        gap: 0;
-        padding: 0 20rem;
-        width: 50%;
+        flex-flow: row wrap;
+        gap: 1rem;
+        justify-content: left;
     }
     .links .item {
-        width: 5rem;
-        flex-basis: 10%;
-        padding: 0 2rem;
+        flex-basis: 25%;
     }
     .socials {
-        margin-left: 120rem;
+        display: grid;
+        justify-content: right;
+        place-self: end right;
     }
 }
