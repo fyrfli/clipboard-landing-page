@@ -23,7 +23,7 @@ html {
     color: var(--dark-grey-blue);
 }
 body {
-    margin: 2rem auto;
+    /* margin: auto; */
     background: url("../images/bg-header-desktop.png") repeat-x;
 }
 /* end generics */
@@ -154,11 +154,15 @@ p {
     margin: auto;
 }
 .bottom {
-    display: flex;
-    flex-direction: column;
     background-color: var(--light-greyish-blue);
+}
+.bottom-container {
+    display: grid;
     padding: 2rem;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
 }
 .bottom .item {
@@ -167,14 +171,19 @@ p {
     color: var(--footer-grey);
 }
 .small-logo {
-    width: 25%;
+    width: 50%;
     display: block;
     margin: 2rem auto;
+}
+.links {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
 }
 .socials {
     display: grid;
     grid-template-columns: repeat(3, 15px);
-    gap: 4rem;
+    gap: 3rem;
     justify-content: center;
     margin: 2rem auto;
 }
