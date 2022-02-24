@@ -19,13 +19,20 @@
     border: none;
 }
 html {
-    font-size: 62.5%;
     font-family: "Bai Jamjuree", sans-serif;
     color: var(--dark-grey-blue);
 }
 body {
-    margin: 10rem auto;
-    line-height: 4rem;
+    margin: 4rem .4rem;
+}
+h1 {
+    font-size: 2rem;
+    margin: 4rem auto;
+}
+p {
+    font-size: 1.4rem;
+    color: var(--greyish-blue);
+    margin: 4rem auto;
 }
 /* end generics */
 
@@ -37,23 +44,11 @@ body {
 .top img {
     display: block;
     margin: auto;
-    width: 40%;
-    height: auto;
+    width: 10rem;
 }
 .lead-in {
-    width: 90%;
     text-align: center;
     margin: 4rem auto;
-}
-.lead-in h1 {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 4rem;
-}
-.lead-in p {
-    font-size: 1.8rem;
-    line-height: 2rem;
-    color: var(--greyish-blue);
 }
 .downloads {
     display: flex;
@@ -80,6 +75,16 @@ body {
 }/* end top */
 
 /* middle */
+.middle {
+    min-width: 0;
+    text-align: center;
+}
+.intro {
+    width: 90%;
+    text-align: center;
+    margin: 4rem auto;
+}
+
 /* end middle */
 
 
